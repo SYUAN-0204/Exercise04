@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=LXGW+WenKai+TC&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+body {
+    margin: auto;
+}
+
+div.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /* 讓內部元素垂直置中 */
+}
+
+p.title {
+    font-family: "Delicious Handrawn", cursive;
+    font-size: 3rem;
+    color: #1A1A1D;
+    padding-left: 60px;
+}
+
+div.headerRight {
+    padding-right: 60px;
+}
+
+/* The navbar container */
+div.topnav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    overflow: hidden;
+    background-color: #1A1A1D;
+}
+
+div.topnavContent {
+    width: 95%;
+}
+
+/* Navbar links */
+div.topnavContent a {
+    width: 120px;
+    height: 40px;
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+div.topnavContent a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.row {
+    margin: auto;
+    width: 90%;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding-inline: 1%;
+    height: 1400px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 20%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 54%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.row p {
+    font-family: "LXGW WenKai TC", cursive;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+p.contentTitle {
+    font-size: 1.2rem;
+}
+
+div.line {
+    width: 90%;
+    height: 0.5px;
+    background-color: #777777;
+    /* 灰色橫線 */
+}
+
+ol {
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 1rem;
+    list-style-type: decimal-leading-zero;
+    /* 變成 01, 02, 03... */
+    width: 80%;
+}
+
+ol p {
+    font-size: 0.8rem;
+}
+
+span.level0 {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding-inline: 5px;
+}
+
+span.level12 {
+    background-color: #FFEB3B;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding-inline: 5px;
+}
+
+span.level15 {
+    background-color: #FF9800;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding-inline: 5px;
+}
+
+span.level18 {
+    background-color: #D32F2F;
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding-inline: 5px;
+}
+
+div.movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    float: left;
+    width: 200px;
+    height: 380px;
+    margin-inline: 10px;
+    margin-block: 20px;
+    box-sizing: border-box;
+    background-color: #EEEEEE;
+    /*border: 0.5px solid #1A1A1D;*/
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+div.movie:hover {
+    width: 200px;
+    height: 400px;
+    margin-block: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    /* 陰影 */
+    cursor: pointer;
+}
+
+div.movie:hover button {
+    height: 40px;
+    background-color: #1A1A1D;
+}
+
+div.movie img {
+    height: 280px;
+}
+
+div.movie p {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 10px;
+    margin-block: 0;
+}
+
+div.movie button {
+    width: 100%;
+    height: 30px;
+    background-color: #777777;
+    color: #FFFFFF;
+    border: none;
+    line-height: 30px;
+}
+
+div.discount {
+    padding: 5%;
+    width: 80%;
+}
+
+div.discount img {
+    width: 100%;
+    border: #1A1A1D solid 0.5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+div.discount p {
+    padding-inline: 10px;
+    line-height: 20px;
+}
+
+.footer {
+    background-color: #1A1A1D;
+    text-align: center;
+    padding: 10px;
+}
